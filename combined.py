@@ -1,3 +1,7 @@
+#################################################################################
+## input_format: python combined.py fileName imdbUrl rottenUrl bookmyshowUrl ###
+###############################################################################
+
 from bs4 import BeautifulSoup as bs
 from selenium import webdriver
 import json
