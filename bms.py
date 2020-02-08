@@ -27,7 +27,7 @@ list_content=[]
 soup = bs(driver.page_source, features="html.parser")
 content = soup.find_all('div', class_=['text','__reviewer-text'])
 list_content = [tag.get_text() for tag in content]    
-print(list_content)
+
 
 with open('newy.txt', 'w') as f:
     for item in list_content:

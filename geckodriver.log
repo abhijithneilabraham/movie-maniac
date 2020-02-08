@@ -317,3 +317,244 @@ JavaScript warning: https://www.geeksforgeeks.org/wp-content/themes/iconic-one/j
 1581144600872	Marionette	INFO	Listening on port 34451
 1581144600898	Marionette	WARN	TLS certificate errors will be ignored for this session
 1581144656932	Marionette	INFO	Stopped listening on port 34451
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/title-3874043417._CB424069971_.js, line 24: TypeError: a.fn.appear.checks[b] is not a function
+JavaScript error: https://in.bookmyshow.com/ahmedabad/movies/joker/ET00100071, line 1: ReferenceError: showTab is not defined
+JavaScript error: https://in.bookmyshow.com/ahmedabad/movies/joker/ET00100071/critic-reviews, line 1: ReferenceError: showTab is not defined
+JavaScript error: https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/blueKai.706f0047416.js, line 1: ReferenceError: bk_addPageCtx is not defined
+JavaScript error: https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/blueKai.706f0047416.js, line 1: ReferenceError: bk_addPageCtx is not defined
+JavaScript error: https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/blueKai.706f0047416.js, line 1: ReferenceError: bk_addPageCtx is not defined
+JavaScript error: https://www.rottentomatoes.com/m/joker_2019/reviews?type=user line 1651 > scriptElement, line 1: ReferenceError: sc is not defined
+JavaScript error: https://www.rottentomatoes.com/m/joker_2019/reviews?type=user line 1521 > scriptElement, line 1: ReferenceError: sc is not defined
+1581145321589	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMmouxN"
+1581145322061	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581145322224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581145322224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581145322224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581145322224	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581145324497	Marionette	INFO	Listening on port 38699
+1581145324600	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/blueKai.706f0047416.js, line 1: ReferenceError: bk_addPageCtx is not defined
+JavaScript error: https://www.rottentomatoes.com/search/?search=birds%20of%20prey line 1521 > scriptElement, line 1: ReferenceError: sc is not defined
+JavaScript error: https://www.rottentomatoes.com/m/birds_of_prey_2020 line 1651 > scriptElement, line 14: TypeError: document.querySelector(...) is null
+JavaScript error: https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/blueKai.706f0047416.js, line 1: ReferenceError: bk_addPageCtx is not defined
+JavaScript error: https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/blueKai.706f0047416.js, line 1: ReferenceError: bk_addPageCtx is not defined
+JavaScript error: https://www.rottentomatoes.com/m/birds_of_prey_2020/reviews?type=user line 1651 > scriptElement, line 1: ReferenceError: sc is not defined
+JavaScript error: https://www.rottentomatoes.com/m/birds_of_prey_2020/reviews?type=user line 1521 > scriptElement, line 1: ReferenceError: sc is not defined
+JavaScript warning: https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/vendor.17c61fb905b.js, line 1: Error: Script terminated by timeout at:
+xa.fn.extend@https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/vendor.17c61fb905b.js:1:15009
+simulate@https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/vendor.17c61fb905b.js:3:9357
+c@https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/vendor.17c61fb905b.js:3:9708
+
+1581145906635	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledRADzB"
+1581145907107	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581145907278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581145907278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581145907278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581145907278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581145909795	Marionette	INFO	Listening on port 45315
+1581145909851	Marionette	WARN	TLS certificate errors will be ignored for this session
+1581145915358	Marionette	INFO	Stopped listening on port 38699
+1581145917679	Marionette	INFO	Stopped listening on port 45315
+1581145941609	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDwodhP"
+1581145942184	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581145942357	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581145942357	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581145942357	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581145942358	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581145944589	Marionette	INFO	Listening on port 44129
+1581145944622	Marionette	WARN	TLS certificate errors will be ignored for this session
+1581145948895	Marionette	INFO	Stopped listening on port 44129
+1581145963289	Marionette	INFO	Stopped listening on port 44597
+1581146270232	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile37ircM"
+1581146270711	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581146270878	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581146270878	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581146270878	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581146270878	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581146273541	Marionette	INFO	Listening on port 42277
+1581146273645	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+1581146427367	Marionette	INFO	Stopped listening on port 42277
+1581146873512	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyayijO"
+1581146873805	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581146873916	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581146873916	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581146873917	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581146873917	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581146875184	Marionette	INFO	Listening on port 43669
+1581146875218	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+1581146961042	Marionette	INFO	Stopped listening on port 43669
+1581146962670	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZ3bzdH"
+1581146962967	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581146963079	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581146963079	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581146963079	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581146963079	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581146964632	Marionette	INFO	Listening on port 41279
+1581146964682	Marionette	WARN	TLS certificate errors will be ignored for this session
+1581147046527	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5f55Qk"
+1581147046822	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581147046932	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581147046932	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581147046933	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581147046933	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581147048188	Marionette	INFO	Listening on port 46087
+1581147048234	Marionette	WARN	TLS certificate errors will be ignored for this session
+1581147050113	Marionette	INFO	Stopped listening on port 41279
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+1581147090502	Marionette	INFO	Stopped listening on port 46087
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1581147092130	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHVNbch"
+1581147092421	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581147092534	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581147092534	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581147092534	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581147092534	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581147094060	Marionette	INFO	Listening on port 33639
+1581147094143	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/blueKai.706f0047416.js, line 1: ReferenceError: bk_addPageCtx is not defined
+JavaScript error: https://www.rottentomatoes.com/m/birds_of_prey_2020/reviews?type=user line 1651 > scriptElement, line 1: ReferenceError: sc is not defined
+JavaScript error: https://www.rottentomatoes.com/m/birds_of_prey_2020/reviews?type=user line 1521 > scriptElement, line 1: ReferenceError: sc is not defined
+1581147109236	Marionette	INFO	Stopped listening on port 33639
+1581147113930	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile58icIe"
+1581147114222	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581147114334	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581147114334	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581147114334	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581147114334	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581147115939	Marionette	INFO	Listening on port 42835
+1581147116041	Marionette	WARN	TLS certificate errors will be ignored for this session
+1581147224101	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileP86RNZ"
+1581147224397	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581147224509	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581147224509	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581147224509	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581147224509	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581147226249	Marionette	INFO	Listening on port 44067
+1581147226316	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+JavaScript error: https://m.media-amazon.com/images/G/01/imdb/js/collections/user-reviews-3694191219._CB449519486_.js, line 90: TypeError: this.widget is null
+1581147269871	Marionette	INFO	Stopped listening on port 44067
+1581147271655	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLiLAZ3"
+1581147271946	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581147272057	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581147272057	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581147272057	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581147272057	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581147273589	Marionette	INFO	Listening on port 44283
+1581147273671	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/blueKai.706f0047416.js, line 1: ReferenceError: bk_addPageCtx is not defined
+JavaScript error: https://www.rottentomatoes.com/m/birds_of_prey_2020/reviews?type=user line 1651 > scriptElement, line 1: ReferenceError: sc is not defined
+JavaScript error: https://www.rottentomatoes.com/m/birds_of_prey_2020/reviews?type=user line 1521 > scriptElement, line 1: ReferenceError: sc is not defined
+1581147415310	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1581147419158	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1581147423004	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1581147426815	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1581147434165	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1581147438091	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1581147773110	Marionette	INFO	Stopped listening on port 44283
+JavaScript error: chrome://browser/content/browser-customization.js, line 172: NS_ERROR_NOT_INITIALIZED: 
+1581147774547	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemWz7kh"
+1581147774848	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581147774961	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581147774961	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581147774962	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581147774962	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581147776474	Marionette	INFO	Listening on port 41469
+1581147776559	Marionette	WARN	TLS certificate errors will be ignored for this session
+1581147852767	Marionette	INFO	Stopped listening on port 41469
