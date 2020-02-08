@@ -25,10 +25,10 @@ while True:
     try:
         loadmore = driver.find_element_by_xpath("//*[@id='content']/div/div/nav[3]/button[2]/span")
         soup = bs(driver.page_source, features="html.parser")
-        content = soup.find_all('p', class_=['audience-reviews__review'])
+        content = soup.find_all('p', class_=['text','audience-reviews__review'])
         # content = soup.select('.js-clamp')
         # content = soup.find_all(".js-clamp")
-        list_content = [tag.get_text() for tag in content]
+        list_content += [tag.get_text() for tag in content]
         time.sleep(1)
         loadmore.click()
         time.sleep(3)
