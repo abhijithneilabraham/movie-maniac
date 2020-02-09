@@ -6,6 +6,7 @@ import time
 import sys 
 from selenium.webdriver.common.keys import Keys
 
+
 print("""
 => Make sure that the current folder has 'geckodriver' file.
 => Please provide proper urls for this program to work.
@@ -26,59 +27,59 @@ bsmUrl=input("=> Enter the Book my Show url for user reviews:");
 #######################################################
 ###################imDb################################
 path="./"
-# driver = webdriver.Firefox(path)
-# driver.get(imdbUrl)
+driver = webdriver.Firefox(path)
+driver.get(imdbUrl)
 
 list_content=[]
-# while True:
-#     try:
-#         loadmore = driver.find_element_by_id("load-more-trigger")
-#         time.sleep(1)
-#         loadmore.click()
-#         time.sleep(1)
-#     except Exception as e:
-#         print(e)
-#         break
-#     print("Collecting Reviews from imDb..... (Don't close the program)")
-#     time.sleep(1)
+while True:
+    try:
+        loadmore = driver.find_element_by_id("load-more-trigger")
+        time.sleep(1)
+        loadmore.click()
+        time.sleep(1)
+    except Exception as e:
+        print(e)
+        break
+    print("Collecting Reviews from imDb..... (Don't close the program)")
+    time.sleep(1)
 
-# #Getting the required user reviews.
-# soup = bs(driver.page_source, features="html.parser")
-# content = soup.find_all('div', class_=['text','show-more__control'])
-# list_content += [tag.get_text() for tag in content]
-# driver.quit() 
+#Getting the required user reviews.
+soup = bs(driver.page_source, features="html.parser")
+content = soup.find_all('div', class_=['text','show-more__control'])
+list_content += [tag.get_text() for tag in content]
+driver.quit() 
 
-# with open(fileName+".txt", 'w') as f:
-#     for item in list_content:
-#         f.write("%s\n" % item)
-# print("The reviews have been saved to the file. :)")        
+with open(fileName+".txt", 'w') as f:
+    for item in list_content:
+        f.write("%s\n" % item)
+print("The reviews have been saved to the file. :)")        
 
 
-# ######################################################
-# ######################################################
+######################################################
+######################################################
 
-# #######################################################
-# ###################Rotten Tomatoes#####################
-# driver = webdriver.Firefox(path)
-# driver.get(rtUrl)
-# while True:
-#     try:
-#         loadmore = driver.find_element_by_xpath("//*[@id='content']/div/div/nav[3]/button[2]/span")
-#         soup = bs(driver.page_source, features="html.parser")
-#         content = soup.find_all('p', class_=['text','audience-reviews__review'])
-#         # content = soup.select('.js-clamp')
-#         # content = soup.find_all(".js-clamp")
-#         list_content += [tag.get_text() for tag in content]
-#         time.sleep(1)
-#         loadmore.click()
-#         time.sleep(1)
-#     except Exception as e:
-#         print(e)
-#         break
-#     print("Collecting Reviews from RT..... (Don't close the program)")
-#     time.sleep(1)
+#######################################################
+###################Rotten Tomatoes#####################
+driver = webdriver.Firefox(path)
+driver.get(rtUrl)
+while True:
+    try:
+        loadmore = driver.find_element_by_xpath("//*[@id='content']/div/div/nav[3]/button[2]/span")
+        soup = bs(driver.page_source, features="html.parser")
+        content = soup.find_all('p', class_=['text','audience-reviews__review'])
+        # content = soup.select('.js-clamp')
+        # content = soup.find_all(".js-clamp")
+        list_content += [tag.get_text() for tag in content]
+        time.sleep(1)
+        loadmore.click()
+        time.sleep(1)
+    except Exception as e:
+        print(e)
+        break
+    print("Collecting Reviews from RT..... (Don't close the program)")
+    time.sleep(1)
 
-# driver.quit()
+driver.quit()
 # #######################################################
 #######################################################
 
