@@ -52,7 +52,7 @@ driver.quit()
 with open(fileName+".txt", 'w') as f:
     for item in list_content:
         f.write("%s\n" % item)
-print("The reviews have been saved to the file. :)")        
+print("The IMDB reviews have been saved to the file. :)")        
 
 
 ######################################################
