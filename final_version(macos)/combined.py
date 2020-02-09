@@ -5,6 +5,7 @@ import requests
 import time
 import sys 
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
 print("""
@@ -22,6 +23,8 @@ fileName=input("=> Enter the movie name:");
 imdbUrl=input("=> Enter the imDb url for user reviews:");
 rtUrl=input("=> Enter the rotten tomatoes url for user reviews:");
 bsmUrl=input("=> Enter the Book my Show url for user reviews:");
+cap = DesiredCapabilities().FIREFOX
+cap["marionette"] = False
 
 
 #######################################################
