@@ -17,7 +17,7 @@ It provides a simple API for diving into common natural language processing (NLP
 part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, and more.
 '''
 
-file=open("birds of prey.txt","r") 
+file=open("hellboy.txt","r") 
 read_file=file.read()
 print('total sentences    ', read_file.count('.')) #simply used the Fullstops to find the number of sentences.
 number_of_sentences=read_file.count('.')

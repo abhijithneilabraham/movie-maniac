@@ -149,7 +149,7 @@ if number_of_sentences>0:
         TextBlob("not a very great calculation").sentiment
      gives the result=Sentiment(polarity=-0.3076923076923077, subjectivity=0.5769230769230769)
      '''
-        total=total+senti.polarity #I only want the polarity here.So I summed it up over for a sentence
+        total=total+senti.polarity #We only want the polarity here.So  summed it up over for a sentence
         
     
     average=total/number_of_sentences #total polarity /number of sentences gives an average polarity.
