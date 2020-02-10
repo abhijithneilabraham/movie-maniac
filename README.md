@@ -20,7 +20,7 @@ Before running the programs,first run the ```firstrun.py``` .This is important f
 
 ## Running the program
  
- Go to the final_version folder (If you are using windows, then use this folder, else if you're using a mac,use the final version macos folder).
+ Go to the final_version folder (If you are using windows or linux, then use this folder, else if you're using a mac,use the final version macos folder).
  
  Run ```combined.py```
  
