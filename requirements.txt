@@ -19,4 +19,5 @@ requests == 2.22.0
 # individual_scrapers/rt.py: 5,10
 selenium == 3.141.0
 nltk
-
+numpy
+textblob
