@@ -14,7 +14,7 @@ In the working directory,
 
 To install all the dependencies, run:
 
-``` pip install -r requirements.txt ```
+``` pip install --user -r requirements.txt ```
 
 Before running the programs,first run the ```firstrun.py``` .This is important for nltk to download all the required packages.
 

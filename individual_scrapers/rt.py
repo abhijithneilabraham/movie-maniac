@@ -17,7 +17,7 @@ patience_time1 = 60
 # list_grades = []
 
 
-driver = webdriver.Firefox()
+driver = webdriver.Chrome()
 driver.get(testurl)
 
 list_content=[]
