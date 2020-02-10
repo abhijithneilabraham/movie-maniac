@@ -31,6 +31,7 @@ Before running the programs,first run the ```firstrun.py``` .This is important f
 The format for getting links are as shown below.
 
 
+
 ## Getting imDb link:
 
 1. Go to the movie's page and click on "User Reviews"
@@ -59,4 +60,11 @@ Click on "see all audience reviews"
 
 3. Copy the link from the address bar.
 ![screen7](./src/book_3.png)
+
+
+
+
+# Tips
+
+There is an extra file named sentiment.py, added here, to see only the sentiment analysis results on a sample txt file. Edit the txt file name and run the program, if you want to see results of the sentiment analysis only.
 
