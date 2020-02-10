@@ -1,16 +1,11 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Feb 10 03:05:44 2020
 
-@author: abhijithneilabraham
 
-"""
 from nltk.stem import WordNetLemmatizer
 import nltk
 from nltk import tokenize
 import numpy as np
 from textblob import TextBlob 
+#nltk.download ()
 '''
 TextBlob is a Python (2 and 3) library for processing textual data. 
 It provides a simple API for diving into common natural language processing (NLP) tasks such as
@@ -19,9 +14,9 @@ part-of-speech tagging, noun phrase extraction, sentiment analysis, classificati
 
 file=open("hellboy.txt","r") 
 read_file=file.read()
-print('total sentences    ', read_file.count('.')) #simply used the Fullstops to find the number of sentences.
-number_of_sentences=read_file.count('.')
 sentences=tokenize.sent_tokenize(read_file) #tokenization means splitting into meaningful stuff,like,splitting into words.
+number_of_sentences=len(sentences)
+print("Total sentences =",number_of_sentences)
 total=0
 for p in sentences: 
     q=TextBlob(p)

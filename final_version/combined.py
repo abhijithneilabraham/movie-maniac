@@ -126,22 +126,26 @@ part-of-speech tagging, noun phrase extraction, sentiment analysis, classificati
 
 file=open(fileName+".txt","r") 
 read_file=file.read()
-print('total sentences    ', read_file.count('.')) #simply used the Fullstops to find the number of sentences.
-number_of_sentences=read_file.count('.')
 sentences=tokenize.sent_tokenize(read_file) #tokenization means splitting into meaningful stuff,like,splitting into words.
-total=0
-for p in sentences: 
-    q=TextBlob(p)
-    senti=q.sentiment 
-    '''
-    to understand what TextBlob.sentiment does,here is an example.
-    TextBlob("not a very great calculation").sentiment
- gives the result=Sentiment(polarity=-0.3076923076923077, subjectivity=0.5769230769230769)
- '''
-    total=total+senti.polarity #I only want the polarity here.So I summed it up over for a sentence
+number_of_sentences=len(sentences)
+print("Total sentences =",number_of_sentences)
+if number_of_sentences>0:
     
-
-average=total/number_of_sentences #total polarity /number of sentences gives an average polarity.
+    total=0
+    for p in sentences: 
+        q=TextBlob(p)
+        senti=q.sentiment 
+        '''
+        to understand what TextBlob.sentiment does,here is an example.
+        TextBlob("not a very great calculation").sentiment
+     gives the result=Sentiment(polarity=-0.3076923076923077, subjectivity=0.5769230769230769)
+     '''
+        total=total+senti.polarity #We only want the polarity here.So we summed it up over for a sentence
+        
+    
+    average=total/number_of_sentences #total polarity /number of sentences gives an average polarity.
+else:
+    print("Not enough reviews generated to do sentiment analysis.")
 if average>0:
     print("positive")
 else:
