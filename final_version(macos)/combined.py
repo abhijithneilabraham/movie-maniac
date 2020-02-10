@@ -5,6 +5,7 @@ import requests
 import time
 import sys 
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
 print("""
@@ -15,6 +16,7 @@ eg-
         imDb           :"https://www.imdb.com/title/tt7713068/?ref_=fn_al_tt_1"
         Rotten Tomatoes:"https://www.rottentomatoes.com/m/birds_of_prey_2020/reviews?type=user",
         Book My Show   :"https://in.bookmyshow.com/chennai/movies/birds-of-prey/ET00112343/user-reviews" 
+Enter Nil if you dont have a url available for a particular choice.
 
 """)
 
@@ -22,12 +24,14 @@ fileName=input("=> Enter the movie name:");
 imdbUrl=input("=> Enter the imDb url for user reviews:");
 rtUrl=input("=> Enter the rotten tomatoes url for user reviews:");
 bsmUrl=input("=> Enter the Book my Show url for user reviews:");
+cap = DesiredCapabilities().FIREFOX
+cap["marionette"] = True
 
 
 #######################################################
 ###################imDb################################
-path="./"
-driver = webdriver.Firefox(path)
+path="/usr/local/bin/geckodriver"
+driver = webdriver.Firefox(executable_path=path)
 driver.get(imdbUrl)
 
 list_content=[]
@@ -60,7 +64,7 @@ print("The IMDB reviews have been saved to the file. :)")
 
 #######################################################
 ###################Rotten Tomatoes#####################
-driver = webdriver.Firefox(path)
+driver = webdriver.Firefox(executable_path=path)
 driver.get(rtUrl)
 while True:
     try:
@@ -85,14 +89,20 @@ driver.quit()
 
 #######################################################
 ####################Book My Show#######################
-driver = webdriver.Firefox(path)
-driver.get(bsmUrl)
-for i in range(60): 
-    #You can adjust the value of range in case there are more reviews.   
-    driver.find_element_by_tag_name('body').send_keys(' ')
-    if i%10==0:
-        print("Collecting Reviews from BookMyshow..... (Don't close the program)")
-    time.sleep(0.8)
+driver = webdriver.Firefox(executable_path=path)
+try:
+    driver.get(bsmUrl)
+    for i in range(60): 
+#You can adjust the value of range in case there are more reviews.   
+        driver.find_element_by_tag_name('body').send_keys(' ')
+        if i%10==0:
+            print("Collecting Reviews from BookMyshow..... (Don't close the program)")
+        time.sleep(0.8)
+except Exception as e:
+    print("No url available for Bookmyshow")
+
+
+
 
 soup = bs(driver.page_source, features="html.parser")
 content = soup.find_all('div', class_=['text','__reviewer-text'])
@@ -128,20 +138,23 @@ file=open(fileName+".txt","r")
 read_file=file.read()
 print('total sentences    ', read_file.count('.')) #simply used the Fullstops to find the number of sentences.
 number_of_sentences=read_file.count('.')
-sentences=tokenize.sent_tokenize(read_file) #tokenization means splitting into meaningful stuff,like,splitting into words.
-total=0
-for p in sentences: 
-    q=TextBlob(p)
-    senti=q.sentiment 
-    '''
-    to understand what TextBlob.sentiment does,here is an example.
-    TextBlob("not a very great calculation").sentiment
- gives the result=Sentiment(polarity=-0.3076923076923077, subjectivity=0.5769230769230769)
- '''
-    total=total+senti.polarity #I only want the polarity here.So I summed it up over for a sentence
+if number_of_sentences>0:
+    sentences=tokenize.sent_tokenize(read_file) #tokenization means splitting into meaningful stuff,like,splitting into words.
+    total=0
+    for p in sentences: 
+        q=TextBlob(p)
+        senti=q.sentiment 
+        '''
+        to understand what TextBlob.sentiment does,here is an example.
+        TextBlob("not a very great calculation").sentiment
+     gives the result=Sentiment(polarity=-0.3076923076923077, subjectivity=0.5769230769230769)
+     '''
+        total=total+senti.polarity #We only want the polarity here.So  summed it up over for a sentence
+        
     
-
-average=total/number_of_sentences #total polarity /number of sentences gives an average polarity.
+    average=total/number_of_sentences #total polarity /number of sentences gives an average polarity.
+else:
+    print("Not enough reviews generated to do sentiment analysis.")
 if average>0:
     print("positive")
 else:
