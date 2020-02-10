@@ -1,6 +1,34 @@
 # movie-maniac
 Web scraping+sentiment analysis for movie review
 
+## Prerequisites
+
+Clone the Repository:
+```git clone https://github.com/abhijithneilabraham/movie-maniac```
+
+Then go to the working directory.
+
+```cd movie-maniac```
+
+In the working directory,
+
+To install all the dependencies, run:
+
+``` pip install -r requirements.txt ```
+
+Before running the programs,first run the ```firstrun.py``` .This is important for nltk to download all the required packages.
+
+## Running the program
+ 
+ Go to the final_version folder (If you are using windows or linux, then use this folder, else if you're using a mac,use the final version macos folder).
+ 
+ Run ```combined.py```
+ 
+ Enter the filename and links as asked.
+ 
+The format for getting links are as shown below.
+
+
 ## Getting imDb link:
 
 1. Go to the movie's page and click on "User Reviews"
