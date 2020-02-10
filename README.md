@@ -1,6 +1,12 @@
 # movie-maniac
 Web scraping+sentiment analysis for movie review
 
+## Prerequisites
+
+To install all the dependencies, run:
+
+``` pip install -r requirements.txt ```
+
 ## Getting imDb link:
 
 1. Go to the movie's page and click on "User Reviews"
