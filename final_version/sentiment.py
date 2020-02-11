@@ -5,6 +5,7 @@ import nltk
 from nltk import tokenize
 import numpy as np
 from textblob import TextBlob 
+import matplotlib.pyplot as plt
 #nltk.download ()
 '''
 TextBlob is a Python (2 and 3) library for processing textual data. 
@@ -28,7 +29,10 @@ mostCommon= allWordExceptStopDist.most_common(10)
 garb=[".",",","'s","n't","!"]
 mostCommon=[i for i in mostCommon if i[0] not in garb]
 
-print(mostCommon)
+print("The most commonly used words along with their frequency count")
+for i in mostCommon:
+    print("word =",i[0],"frequency =",i[1])
+    
 for p in sentences: 
     q=TextBlob(p)
     senti=q.sentiment 
@@ -45,19 +49,23 @@ for p in sentences:
         neg+=1
     else:
         pos+=1
-print(neutral,neg,pos)
-
-average=total/number_of_sentences #total polarity /number of sentences gives an average polarity.
-print(total)
-print(average)
-
-if average>0:
-    print("positive")
-elif average==0:
-    print("neutral")    
-else:
-    print("negative")
+#average=total/number_of_sentences #total polarity /number of sentences gives an average polarity.
+#
+#print("average polarity =",average*100,"%")
 
 
+
+# Data to plot
+labels = 'Positive', 'Negative', 'Neutral'
+sizes = [pos, neg, neutral]
+colors = ['gold', 'yellowgreen', 'lightcoral']
+explode = (0.1, 0, 0)  # explode 1st slice
+
+# Plot
+plt.pie(sizes, explode=explode, labels=labels, colors=colors,
+autopct='%1.1f%%', shadow=True, startangle=140)
+
+plt.axis('equal')
+plt.show()
 
         
