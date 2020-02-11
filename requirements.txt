@@ -22,3 +22,4 @@ nltk
 numpy
 textblob
 flask
+matplotlib
