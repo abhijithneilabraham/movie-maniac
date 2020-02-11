@@ -11,7 +11,7 @@ from nltk import tokenize
 import numpy as np
 from textblob import TextBlob 
 import matplotlib.pyplot as plt
-import os
+
 def scraper(fileName,imdbUrl,rtUrl,bsmUrl,num):
     print("""
     => Make sure that the current folder has 'geckodriver' file.
@@ -178,18 +178,13 @@ def scraper(fileName,imdbUrl,rtUrl,bsmUrl,num):
     autopct='%1.1f%%', shadow=True, startangle=140)
     
     plt.axis('equal')
-    strFile = 'static/img/sentiment.png'
-    if os.path.isfile(strFile):
-        os.remove(strFile)
     plt.savefig('static/img/sentiment.png')
+    plt.close()
     vals = [i[0] for i in mostCommon ]
     freq = [i[1] for i in mostCommon ]
     plt.bar(vals,freq)
-    strFile2 = 'static/img/wordcount.png'
-    if os.path.isfile(strFile2):
-        os.remove(strFile2)
-    
     plt.savefig('static/img/wordcount.png', dpi=400)
+    plt.close()
 #scraper('joker2019','https://www.imdb.com/title/tt7286456/reviews?ref_=tt_ql_3','https://www.rottentomatoes.com/m/joker_2019/reviews?type=user','https://in.bookmyshow.com/movies/joker/ET00100071/user-reviews',2)
     
 
