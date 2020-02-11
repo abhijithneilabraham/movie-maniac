@@ -6,11 +6,18 @@ import requests
 import time
 import sys 
 import combined
+import os
 from selenium.webdriver.common.keys import Keys
 
 app=Flask(__name__)
 
+img_folder = os.path.join('static', 'img')
+app.config['UPLOAD_FOLDER'] = img_folder
+
+
+
 @app.route('/',methods=['GET','POST'])
+@app.route('/index')
 def start_page():
     if request.method=='POST':
         fn=request.form["name"]
@@ -18,12 +25,12 @@ def start_page():
         rt=request.form['rt']
         bms=request.form['bms']
         num=request.form['num']
-
-        return combined.scraper(fn,im,rt,bms,num)
-
+        combined.scraper(fn,im,rt,bms,num)
         
-            
-    return render_template('index.html')
+
+        return render_template("results.html")
+    
+    return render_template("index.html")
 
 if __name__ == "__main__":
     #init()

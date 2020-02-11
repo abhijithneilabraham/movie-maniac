@@ -161,7 +161,7 @@ def scraper(fileName,imdbUrl,rtUrl,bsmUrl,num):
             neg+=1
         else:
             pos+=1
-    #average=total/number_of_sentences #total polarity /number of sentences gives an average polarity.
+    average=total/number_of_sentences #total polarity /number of sentences gives an average polarity.
     #
     #print("average polarity =",average*100,"%")
     
@@ -178,7 +178,12 @@ def scraper(fileName,imdbUrl,rtUrl,bsmUrl,num):
     autopct='%1.1f%%', shadow=True, startangle=140)
     
     plt.axis('equal')
-    plt.savefig('sentiment.png')
-    plt.show()
+    plt.savefig('static/img/sentiment.png')
+    vals = [i[0] for i in mostCommon ]
+    freq = [i[1] for i in mostCommon ]
+    plt.bar(vals,freq)
+    plt.savefig('static/img/wordcount.png',dpi=400)
+    
+
 
 

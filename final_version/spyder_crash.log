@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/Users/abhijithneilabraham/miniconda3/envs/py37/lib/python3.6/site-packages/spyder/app/mainwindow.py", line 3285, in main
+    mainwindow = run_spyder(app, options, args)
+  File "/Users/abhijithneilabraham/miniconda3/envs/py37/lib/python3.6/site-packages/spyder/app/mainwindow.py", line 3140, in run_spyder
+    main.setup()
+  File "/Users/abhijithneilabraham/miniconda3/envs/py37/lib/python3.6/site-packages/spyder/app/mainwindow.py", line 813, in setup
+    message=_("Spyder Internal Console\n\n"
+  File "/Users/abhijithneilabraham/miniconda3/envs/py37/lib/python3.6/site-packages/spyder/plugins/console.py", line 67, in __init__
+    light_background=light_background)
+  File "/Users/abhijithneilabraham/miniconda3/envs/py37/lib/python3.6/site-packages/spyder/widgets/internalshell.py", line 142, in __init__
+    profile)
+  File "/Users/abhijithneilabraham/miniconda3/envs/py37/lib/python3.6/site-packages/spyder/widgets/shell.py", line 636, in __init__
+    initial_message)
+  File "/Users/abhijithneilabraham/miniconda3/envs/py37/lib/python3.6/site-packages/spyder/widgets/shell.py", line 70, in __init__
+    self.history = self.load_history()
+  File "/Users/abhijithneilabraham/miniconda3/envs/py37/lib/python3.6/site-packages/spyder/widgets/shell.py", line 495, in load_history
+    if rawhistory[1] != self.INITHISTORY[1]:
+IndexError: list index out of range
