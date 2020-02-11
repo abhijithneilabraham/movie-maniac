@@ -10,14 +10,9 @@ import os
 from selenium.webdriver.common.keys import Keys
 
 app=Flask(__name__)
-
-img_folder = os.path.join('static', 'img')
-app.config['UPLOAD_FOLDER'] = img_folder
-
-
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 @app.route('/',methods=['GET','POST'])
-@app.route('/index')
 def start_page():
     if request.method=='POST':
         fn=request.form["name"]

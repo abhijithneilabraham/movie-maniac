@@ -182,8 +182,8 @@ def scraper(fileName,imdbUrl,rtUrl,bsmUrl,num):
     vals = [i[0] for i in mostCommon ]
     freq = [i[1] for i in mostCommon ]
     plt.bar(vals,freq)
-    plt.savefig('static/img/wordcount.png')
-
+    plt.savefig('static/img/wordcount.png', dpi=400)
+#scraper('joker2019','https://www.imdb.com/title/tt7286456/reviews?ref_=tt_ql_3','https://www.rottentomatoes.com/m/joker_2019/reviews?type=user','https://in.bookmyshow.com/movies/joker/ET00100071/user-reviews',2)
     
 
 
