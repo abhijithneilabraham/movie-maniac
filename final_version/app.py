@@ -17,8 +17,9 @@ def start_page():
         im=request.form['im']
         rt=request.form['rt']
         bms=request.form['bms']
+        num=request.form['num']
 
-        return combined.scraper(fn,im,rt,bms)
+        return combined.scraper(fn,im,rt,bms,num)
 
         
             
