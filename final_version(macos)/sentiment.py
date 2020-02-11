@@ -12,7 +12,7 @@ It provides a simple API for diving into common natural language processing (NLP
 part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, and more.
 '''
 
-file=open("hellboy.txt","r") 
+file=open("Hellboy.txt","r") 
 read_file=file.read()
 sentences=tokenize.sent_tokenize(read_file) #tokenization means splitting into meaningful stuff,like,splitting into words.
 number_of_sentences=len(sentences)
