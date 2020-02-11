@@ -11,7 +11,7 @@ from nltk import tokenize
 import numpy as np
 from textblob import TextBlob 
 
-def scraper(fileName,imdbUrl,rtUrl,bsmUrl):
+def scraper(fileName,imdbUrl,rtUrl,bsmUrl,num):
     print("""
     => Make sure that the current folder has 'geckodriver' file.
     => Please provide proper urls for this program to work.
@@ -27,11 +27,12 @@ def scraper(fileName,imdbUrl,rtUrl,bsmUrl):
     #######################################################
     ###################imDb################################
     path="./"
+    num=int(num)
     driver = webdriver.Firefox(path)
     driver.get(imdbUrl)
 
     list_content=[]
-    for i in range(60):
+    for i in range(num):
         try:
             loadmore = driver.find_element_by_id("load-more-trigger")
             time.sleep(1)
@@ -62,7 +63,7 @@ def scraper(fileName,imdbUrl,rtUrl,bsmUrl):
     ###################Rotten Tomatoes#####################
     driver = webdriver.Firefox(path)
     driver.get(rtUrl)
-    for i in range(60):
+    for i in range(num):
         try:
             loadmore = driver.find_element_by_xpath("//*[@id='content']/div/div/nav[3]/button[2]/span")
             soup = bs(driver.page_source, features="html.parser")
@@ -88,7 +89,7 @@ def scraper(fileName,imdbUrl,rtUrl,bsmUrl):
     driver = webdriver.Firefox(path)
     try:
         driver.get(bsmUrl)
-        for i in range(60): 
+        for i in range(num%10): 
     #You can adjust the value of range in case there are more reviews.   
             driver.find_element_by_tag_name('body').send_keys(' ')
             if i%10==0:
