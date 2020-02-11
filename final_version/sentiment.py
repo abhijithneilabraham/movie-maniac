@@ -21,6 +21,17 @@ total=0
 pos=0
 neg=0
 neutral=0
+allWords = nltk.tokenize.word_tokenize(read_file)
+stopwords =set( nltk.corpus.stopwords.words('english'))
+allWordExceptStopDist = nltk.FreqDist(w.lower() for w in allWords if w.lower() not in stopwords)   
+mostCommon= allWordExceptStopDist.most_common(10)
+for i in range(len(mostCommon)):
+    if mostCommon[i][0]=="." or "," or "'s" or "n't" :
+        mostCommon.remove(mostCommon[i])
+
+
+#mostCommon.remo
+print(mostCommon)
 for p in sentences: 
     q=TextBlob(p)
     senti=q.sentiment 
