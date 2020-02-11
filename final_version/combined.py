@@ -22,14 +22,6 @@ def scraper(fileName,imdbUrl,rtUrl,bsmUrl):
             Book My Show   :"https://in.bookmyshow.com/chennai/movies/birds-of-prey/ET00112343/user-reviews" 
 
     """)
-    # imdbUrl=sys.argv[0]
-    # rtUrl=sys.argv[1]
-    # bsmUrl=sys.argv[2]
-
-    # fileName=input("=> Enter the movie name:");
-    # imdbUrl=input("=> Enter the imDb url for user reviews:");
-    # rtUrl=input("=> Enter the rotten tomatoes url for user reviews:");
-    # bsmUrl=input("=> Enter the Book my Show url for user reviews:");
 
 
     #######################################################
@@ -39,7 +31,7 @@ def scraper(fileName,imdbUrl,rtUrl,bsmUrl):
     driver.get(imdbUrl)
 
     list_content=[]
-    for i in range:
+    for i in range(60):
         try:
             loadmore = driver.find_element_by_id("load-more-trigger")
             time.sleep(1)
