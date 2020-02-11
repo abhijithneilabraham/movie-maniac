@@ -27,6 +27,7 @@ def start_page():
         num=request.form['num']
         combined.scraper(fn,im,rt,bms,num)
         
+        
 
         return render_template("results.html")
     

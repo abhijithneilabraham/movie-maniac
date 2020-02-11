@@ -182,7 +182,8 @@ def scraper(fileName,imdbUrl,rtUrl,bsmUrl,num):
     vals = [i[0] for i in mostCommon ]
     freq = [i[1] for i in mostCommon ]
     plt.bar(vals,freq)
-    plt.savefig('static/img/wordcount.png',dpi=400)
+    plt.savefig('static/img/wordcount.png')
+
     
 
 

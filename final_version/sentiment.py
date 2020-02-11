@@ -13,7 +13,7 @@ It provides a simple API for diving into common natural language processing (NLP
 part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, and more.
 '''
 
-file=open("Birds of Prey.txt","r") 
+file=open("joker2019.txt","r") 
 read_file=file.read()
 sentences=tokenize.sent_tokenize(read_file) #tokenization means splitting into meaningful stuff,like,splitting into words.
 number_of_sentences=len(sentences)
@@ -66,13 +66,13 @@ plt.pie(sizes, explode=explode, labels=labels, colors=colors,
 autopct='%1.1f%%', shadow=True, startangle=140)
 
 plt.axis('equal')
-plt.savefig('templates/sentiment.png')
+plt.savefig('sentiment.png')
 plt.show()
 
 vals = [i[0] for i in mostCommon ]
 freq = [i[1] for i in mostCommon ]
 plt.bar(vals,freq)
-plt.savefig('templates/wordcount.png',dpi=400)
+plt.savefig('wordcount.svg',figsize=(8, 6), dpi=80)
 
 
         
