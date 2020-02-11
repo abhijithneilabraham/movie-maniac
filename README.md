@@ -3,7 +3,7 @@ Web scraping+sentiment analysis for movie review
 
 ## Prerequisites
 
-Install firefox browser in your system. 
+#### Install firefox browser in your system. 
 
 Clone the Repository:
 ```git clone https://github.com/abhijithneilabraham/movie-maniac```
