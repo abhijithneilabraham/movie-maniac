@@ -26,6 +26,9 @@ Before running the programs,first run the ```firstrun.py``` .This is important f
  
  Run ```flask run```
  
+ 
+ Go to your browser and enter ```http://127.0.0.1:5000/``` into your address bar. This is localhost.
+ 
 Enter the filename and links as asked.
  
 The format for getting links are as shown below.
