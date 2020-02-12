@@ -24,9 +24,9 @@ Before running the programs,first run the ```firstrun.py``` .This is important f
  
  Go to the final_version folder (If you are using windows or linux, then use this folder, else if you're using a mac,use the final version macos folder).
  
- Run ```combined.py```
+ Run ```flask run```
  
- Enter the filename and links as asked.
+Enter the filename and links as asked.
  
 The format for getting links are as shown below.
 
