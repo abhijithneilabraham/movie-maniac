@@ -24,7 +24,7 @@ Before running the programs,first run the ```firstrun.py``` .This is important f
  
  Go to the final_version folder (If you are using windows or linux, then use this folder, else if you're using a mac,use the final version macos folder).
  
- Run ```flask run```
+ Run ```flask run``` , or run ```python app.py```
  
  
  Go to your browser and enter ```http://127.0.0.1:5000/``` into your address bar. This is localhost.
