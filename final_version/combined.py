@@ -187,7 +187,7 @@ def scraper(movieName,year,num):
     plt.bar(vals,freq)
     plt.savefig('static/img/wordcount.png', dpi=400)
     plt.close()
-#scraper('joker2019','https://www.imdb.com/title/tt7286456/reviews?ref_=tt_ql_3','https://www.rottentomatoes.com/m/joker_2019/reviews?type=user','https://in.bookmyshow.com/movies/joker/ET00100071/user-reviews',2)
+
     
 
 
