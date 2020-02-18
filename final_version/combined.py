@@ -12,49 +12,60 @@ import numpy as np
 from textblob import TextBlob 
 import matplotlib.pyplot as plt
 
-def scraper(fileName,imdbUrl,rtUrl,bsmUrl,num):
-    print("""
-    => Make sure that the current folder has 'geckodriver' file.
-    => Please provide proper urls for this program to work.
-    eg-
-        For the movie "Birds of Prey", these are the urls for user reviews (Look for these formats of urls):
-            imDb           :"https://www.imdb.com/title/tt7713068/reviews?ref_=tt_ql_3"
-            Rotten Tomatoes:"https://www.rottentomatoes.com/m/birds_of_prey_2020/reviews?type=user",
-            Book My Show   :"https://in.bookmyshow.com/chennai/movies/birds-of-prey/ET00112343/user-reviews" 
-
-    """)
-
-
+def scraper(movieName,year,num):
     #######################################################
     ###################imDb################################
     path="./"
     num=int(num)
     driver = webdriver.Firefox(path)
+    
+    imdbUrl="https://www.imdb.com/find?s=tt&q="+ "%20".join(movieName.split(" "))+ "&ref_=nv_sr_sm"
     driver.get(imdbUrl)
 
     list_content=[]
     for i in range(num):
         try:
-            loadmore = driver.find_element_by_id("load-more-trigger")
+            soup = bs(driver.page_source, features="html.parser")
+            content = soup.find_all('td', class_=['result_text'])
+            for movie in content:
+                if year in (movie.get_text()):
+                    print(year)
+                    link="https://www.imdb.com"+ movie.a.get("href")
+                    driver.get(link)
+                    break
+
+            userReviews=driver.find_element_by_xpath('//*[contains(concat( " ", @class, " " ), concat( " ", "quicklink", " " )) and (((count(preceding-sibling::*) + 1) = 5) and parent::*)]')
+            userReviews.click()
             time.sleep(1)
-            loadmore.click()
-            time.sleep(1)
+
+            for i in range(num):
+                try:
+                    loadmore = driver.find_element_by_id("load-more-trigger")
+                    time.sleep(1)
+                    loadmore.click()
+                    time.sleep(1)
+                except Exception as e:
+                    print(e)
+                    break
+
+                print("Collecting Reviews from imDb..... (Don't close the program)")
+                time.sleep(1)
         except Exception as e:
             print(e)
             break
-        print("Collecting Reviews from imDb..... (Don't close the program)")
-        time.sleep(1)
+
 
     #Getting the required user reviews.
     soup = bs(driver.page_source, features="html.parser")
     content = soup.find_all('div', class_=['text','show-more__control'])
     list_content += [tag.get_text() for tag in content]
-    driver.quit() 
+    # river.quit() 
 
-    with open(fileName+".txt", 'w') as f:
+    with open(movieName+".txt", 'w') as f:
         for item in list_content:
             f.write("%s\n" % item)
-    print("The IMDB reviews have been saved to the file. :)")        
+    print("The IMDB reviews have been saved to the file. :)")   
+    list_content=[]     
 
 
     ######################################################
@@ -62,55 +73,46 @@ def scraper(fileName,imdbUrl,rtUrl,bsmUrl,num):
 
     #######################################################
     ###################Rotten Tomatoes#####################
-    driver = webdriver.Firefox(path)
-    driver.get(rtUrl)
-    for i in range(num):
-        try:
-            loadmore = driver.find_element_by_xpath("//*[@id='content']/div/div/nav[3]/button[2]/span")
-            soup = bs(driver.page_source, features="html.parser")
-            content = soup.find_all('p', class_=['text','audience-reviews__review'])
-            # content = soup.select('.js-clamp')
-            # content = soup.find_all(".js-clamp")
-            list_content += [tag.get_text() for tag in content]
-            time.sleep(1)
-            loadmore.click()
-            time.sleep(1)
-        except Exception as e:
-            print(e)
-            break
-        print("Collecting Reviews from RT..... (Don't close the program)")
-        time.sleep(1)
-
-    driver.quit()
-    # #######################################################
-    #######################################################
-
-    #######################################################
-    ####################Book My Show#######################
-    driver = webdriver.Firefox(path)
+    path="./"
+    url="https://www.rottentomatoes.com/search/?search="+movieName
+    time.sleep(1)
+    driver.get(url)
     try:
-        driver.get(bsmUrl)
-        for i in range(num%10): 
-    #You can adjust the value of range in case there are more reviews.   
-            driver.find_element_by_tag_name('body').send_keys(' ')
-            if i%10==0:
-                print("Collecting Reviews from BookMyshow..... (Don't close the program)")
-            time.sleep(0.8)
+        soup = bs(driver.page_source, features="html.parser")
+        content = soup.find_all('div', class_=['search__results-item-info-top'])
+        for movie in content:
+            if year in (movie.span.get_text()):
+                link="https://www.rottentomatoes.com"+movie.a.get("href")
+                driver.get(link)
+                break
+        userReviews=link+"/reviews?type=user"
+        driver.get(userReviews)      
+
+        for i in range(num):
+            try:
+                loadmore = driver.find_element_by_xpath("//*[@id='content']/div/div/nav[3]/button[2]/span")
+                soup = bs(driver.page_source, features="html.parser")
+                content = soup.find_all('p', class_=['text','audience-reviews__review'])
+                list_content += [tag.get_text() for tag in content]
+                time.sleep(1)
+                loadmore.click()
+                time.sleep(1)
+            except Exception as e:
+                print(e)
+                break
+            print("Collecting Reviews from RT..... (Don't close the program)")
+        time.sleep(1)
     except Exception as e:
-        print("No url available for Bookmyshow")
+        print(e)
 
-
-
-    soup = bs(driver.page_source, features="html.parser")
-    content = soup.find_all('div', class_=['text','__reviewer-text'])
-    list_content += [tag.get_text() for tag in content]  
-    driver.quit()
+    driver.quit()    
     #######################################################
     #######################################################
+
 
     #######################################################
     ##############Writing it to a file#####################
-    with open(fileName+".txt", 'w') as f:
+    with open(movieName+".txt", 'a') as f:
         for item in list_content:
             f.write("%s\n" % item)
     print("The reviews have been saved to the file. :)")        
@@ -125,7 +127,7 @@ def scraper(fileName,imdbUrl,rtUrl,bsmUrl,num):
     part-of-speech tagging, noun phrase extraction, sentiment analysis, classification, translation, and more.
     '''
 
-    file=open(fileName+".txt","r") 
+    file=open(movieName+".txt","r") 
     read_file=file.read()
     sentences=tokenize.sent_tokenize(read_file) #tokenization means splitting into meaningful stuff,like,splitting into words.
     number_of_sentences=len(sentences)
