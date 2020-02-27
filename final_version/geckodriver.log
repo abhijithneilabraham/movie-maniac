@@ -3055,3 +3055,11 @@ JavaScript error: https://www.rottentomatoes.com/search/?search=joker line 1526 
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
 JavaScript error: https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/blueKai.93fda013f61.js, line 1: ReferenceError: bk_addPageCtx is not defined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://tpc.googlesyndication.com/pagead/js/r20200224/r20110914/client/qs_click_protection_fy2019.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.rottentomatoes.com/assets/pizza-pie/javascripts/bundles/blueKai.93fda013f61.js, line 1: ReferenceError: bk_addPageCtx is not defined
+JavaScript error: https://www.rottentomatoes.com/m/joker_2019/reviews?type=user line 1654 > scriptElement, line 1: ReferenceError: sc is not defined
+JavaScript error: https://www.rottentomatoes.com/m/joker_2019/reviews?type=user line 1526 > scriptElement, line 1: ReferenceError: sc is not defined
+1582813935844	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1582813938066	Marionette	INFO	Stopped listening on port 55595
