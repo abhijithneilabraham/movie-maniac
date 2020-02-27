@@ -18,11 +18,11 @@ def start_page():
         fn=request.form["name"]
         yr=request.form["year"]
         num=request.form['num']
-        combined.scraper(fn,yr,num)
+        text=combined.scraper(fn,yr,num)
         
         
 
-        return render_template("results.html")
+        return render_template("results.html",text=text)
     
     return render_template("index.html")
 

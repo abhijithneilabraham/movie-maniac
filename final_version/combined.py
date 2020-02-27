@@ -187,7 +187,12 @@ def scraper(movieName,year,num):
     plt.bar(vals,freq)
     plt.savefig('static/img/wordcount.png', dpi=100)
     plt.close()
+    
+    from gensim.summarization.summarizer import summarize
 
+    file=open(movieName+".txt","r") 
+    read_file=file.read()
+    return summarize(read_file,ratio=0.005)
     
 
 
