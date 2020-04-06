@@ -3063,3 +3063,4 @@ JavaScript error: https://www.rottentomatoes.com/m/joker_2019/reviews?type=user 
 1582813935844	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 bail@chrome://marionette/content/sync.js:237:64
 1582813938066	Marionette	INFO	Stopped listening on port 55595
+1582819563812	Marionette	INFO	Stopped listening on port 55501
