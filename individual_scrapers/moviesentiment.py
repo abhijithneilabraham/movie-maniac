@@ -5,7 +5,7 @@ from numpy import asarray
 from numpy import zeros
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
-from keras.models import Sequential
+from keras.models import Sequential,load_model
 from keras.layers import Dense
 from keras.layers import Flatten
 from keras.layers import Embedding
@@ -105,7 +105,7 @@ Xtrain = pad_sequences(encoded_docs, maxlen=max_length, padding='post')
 # define training labels
 ytrain = array([0 for _ in range(900)] + [1 for _ in range(900)])
 
-# load all test reviews
+ load all test reviews
 positive_docs = process_docs('review_polarity/txt_sentoken/pos', vocab, False)
 negative_docs = process_docs('review_polarity/txt_sentoken/neg', vocab, False)
 test_docs = negative_docs + positive_docs
@@ -137,7 +137,13 @@ print(model.summary())
 # compile network
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 # fit network
-model.fit(Xtrain, ytrain, epochs=10, verbose=1)
+model.fit(Xtrain[:-1], ytrain[:-1], epochs=10, verbose=1)
+model.save("moviesentiment.h5")
 # evaluate
 loss, acc = model.evaluate(Xtest, ytest, verbose=0)
 print('Test Accuracy: %f' % (acc*100))
+model=load_model("moviesentiment.h5")
+p=asarray([Xtrain[-1],Xtrain[-2],Xtrain[1]])
+print(len(p))
+res=model.predict(p)
+print(res)
